@@ -129,11 +129,15 @@ function renderProjects(filter: string) {
   observeElements()
 }
 
+let showAllDatalab = false
+
 function renderDatalabProjects() {
   const grid = document.getElementById('datalab-grid')
+  const toggleBtn = document.getElementById('toggle-datalab-btn')
   if (!grid) return
   grid.innerHTML = ''
-  datalabProjects.forEach((p, i) => {
+  const items = showAllDatalab ? datalabProjects : datalabProjects.slice(0, 6)
+  items.forEach((p, i) => {
     const card = document.createElement('div')
     card.className = 'datalab-card reveal-up animate-in'
     card.style.animationDelay = `${(i % 6) * 80}ms`
@@ -149,12 +153,24 @@ function renderDatalabProjects() {
       </h4>
       <p class="text-slate-500 text-xs flex items-center gap-1 mt-auto pt-2">
         <svg class="w-3.5 h-3.5 text-accent-400" fill="currentColor" viewBox="0 0 24 24"><path d="M12.946 18.151v-5.239L21.209 8.2 19.2 7.048l-6.254 3.567V5.376l-2.009-1.15v14.074l-7.28-4.144-1.989 1.15 9.268 5.282 1.1-.628-.002-.004 1.003-.572-.002-.003 8.836-5.022L19.862 13l-6.916 3.937v1.214zm-2.009-9.968L3.674 12.9l2.009 1.152 5.254-2.994v4.091l2.009 1.15V2.226L5.685 6.937l2.009 1.153 3.243-1.849v1.942z"/></svg>
-        DataCamp DataLab Interactive Workspace
+        DataCamp DataLab Workspace
       </p>
     `
     grid.appendChild(card)
   })
+
+  if (toggleBtn) {
+    toggleBtn.textContent = showAllDatalab ? 'Collapse DataLab Projects' : 'Show All DataLab Projects'
+  }
   observeElements()
+}
+
+function setupDatalabToggle() {
+  const toggleBtn = document.getElementById('toggle-datalab-btn')
+  toggleBtn?.addEventListener('click', () => {
+    showAllDatalab = !showAllDatalab
+    renderDatalabProjects()
+  })
 }
 
 let showAllCourses = false
@@ -206,7 +222,7 @@ function renderCourses() {
       toggleBtn.style.display = 'none'
     } else {
       toggleBtn.style.display = 'inline-flex'
-      toggleBtn.textContent = showAllCourses ? 'Collapse Course List' : `Show All ${datacampCourses.length} Courses`
+      toggleBtn.textContent = showAllCourses ? 'Collapse Course List' : 'Show All Courses'
     }
   }
   observeElements()
@@ -376,6 +392,7 @@ function setupContactForm() {
 
 renderProjects('all')
 renderDatalabProjects()
+setupDatalabToggle()
 renderCourses()
 setupCourseControls()
 setupFilters()

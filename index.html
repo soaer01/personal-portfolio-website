@@ -113,7 +113,7 @@
               </div>
               <div class="stat-card">
                 <span class="stat-number" data-target="94">0</span>
-                <span class="stat-label">DataCamp Courses</span>
+                <span class="stat-label">Completed Courses</span>
               </div>
               <div class="stat-card">
                 <span class="stat-number">3.38</span>
@@ -215,11 +215,14 @@
         <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
           <div class="text-center mb-16">
             <p class="text-accent-400 font-medium tracking-wider uppercase text-sm mb-2 reveal-up">Interactive Workspaces</p>
-            <h2 class="text-3xl sm:text-4xl font-bold text-white reveal-up">DataCamp DataLab Showcase</h2>
-            <p class="text-slate-400 max-w-2xl mx-auto mt-3 reveal-up">Collection of 18 interactive data science, machine learning, and data engineering DataLab workspaces.</p>
+            <h2 class="text-3xl sm:text-4xl font-bold text-white reveal-up">DataLab Projects</h2>
+            <p class="text-slate-400 max-w-2xl mx-auto mt-3 reveal-up">Collection of interactive data science, machine learning, and data engineering DataLab workspaces.</p>
             <div class="w-20 h-1 bg-gradient-to-r from-accent-400 to-purple-500 mx-auto mt-4 rounded-full reveal-up"></div>
           </div>
           <div id="datalab-grid" class="grid sm:grid-cols-2 lg:grid-cols-3 gap-5">
+          </div>
+          <div class="text-center mt-10 reveal-up">
+            <button id="toggle-datalab-btn" class="btn-outline text-sm py-2.5 px-6">Show All DataLab Projects</button>
           </div>
         </div>
       </section>
@@ -228,15 +231,15 @@
         <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
           <div class="text-center mb-12">
             <p class="text-accent-400 font-medium tracking-wider uppercase text-sm mb-2 reveal-up">Certifications &amp; Coursework</p>
-            <h2 class="text-3xl sm:text-4xl font-bold text-white reveal-up">94 Completed DataCamp Courses</h2>
-            <p class="text-slate-400 max-w-2xl mx-auto mt-3 reveal-up">Searchable directory of 94 completed courses with direct links to official Statements of Accomplishment.</p>
+            <h2 class="text-3xl sm:text-4xl font-bold text-white reveal-up">Completed DataCamp Courses</h2>
+            <p class="text-slate-400 max-w-2xl mx-auto mt-3 reveal-up">Searchable directory of completed courses with direct links to official Statements of Accomplishment.</p>
             <div class="w-20 h-1 bg-gradient-to-r from-accent-400 to-purple-500 mx-auto mt-4 rounded-full reveal-up"></div>
           </div>
 
           <div class="max-w-3xl mx-auto mb-8 space-y-4 reveal-up">
-            <input type="text" id="course-search" class="course-search-input" placeholder="Search 94 completed courses (e.g. PyTorch, Docker, LLMs, SQL, LangChain)..." />
+            <input type="text" id="course-search" class="course-search-input" placeholder="Search completed courses (e.g. PyTorch, Docker, LLMs, SQL, LangChain)..." />
             <div class="flex flex-wrap gap-2 justify-center">
-              <button class="course-cat-btn filter-btn active" data-course-cat="all">All (94)</button>
+              <button class="course-cat-btn filter-btn active" data-course-cat="all">All</button>
               <button class="course-cat-btn filter-btn" data-course-cat="ai">AI &amp; LLMs</button>
               <button class="course-cat-btn filter-btn" data-course-cat="data-eng">Data Eng &amp; SQL</button>
               <button class="course-cat-btn filter-btn" data-course-cat="ml">Machine Learning</button>
@@ -248,7 +251,7 @@
           </div>
 
           <div class="text-center mt-10 reveal-up">
-            <button id="toggle-courses-btn" class="btn-outline text-sm py-2.5 px-6">Show All 94 Courses</button>
+            <button id="toggle-courses-btn" class="btn-outline text-sm py-2.5 px-6">Show All Courses</button>
           </div>
         </div>
       </section>
