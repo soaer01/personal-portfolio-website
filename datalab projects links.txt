@@ -1,0 +1,18 @@
+Classifying Emails using Llama: https://www.datacamp.com/datalab/w/355046a3-a6a5-4112-8268-61d7a36c8e7e/edit
+Organizing Medical Transcriptions with the OpenAI API: https://www.datacamp.com/datalab/w/c3867f85-db6c-4a95-9563-1af0c43e1399/edit
+Building a Retail Data Pipeline: https://www.datacamp.com/datalab/w/ea2f4f84-a828-4fee-aa92-75812d19902b/edit
+Exploring London's Travel Network: https://www.datacamp.com/datalab/w/b1fed36d-af5b-4278-b760-20e72521a916/edit
+Predictive Modeling for Agriculture: https://www.datacamp.com/datalab/w/afad6a8d-e0a0-4e08-9d6e-364c45a6a882/edit
+Visualizing the History of Nobel Prize Winners: https://www.datacamp.com/datalab/w/dceb0960-2351-4824-ab79-dbbff9b6ea66/edit
+Clustering Antarctic Penguin Species: https://www.datacamp.com/datalab/w/261cb326-3df1-492d-96e0-cf43095eff60/edit
+When Was the Golden Era of Video Games?: https://www.datacamp.com/datalab/w/2bce30e7-4a57-4cb4-aca0-fccafc0b20a6/edit
+Modeling Car Insurance Claim Outcomes: https://www.datacamp.com/datalab/w/f5b81f15-3807-446a-a6a0-108ccac3c678/edit
+Exploring Airbnb Market Trends: https://www.datacamp.com/datalab/w/bb1a7633-0225-4c8d-97d3-2a481415bbb2/edit
+Exploring NYC Public School Test Result Scores: https://www.datacamp.com/datalab/w/6ae649ef-9c9f-4893-a2fc-7188435fe264/edit
+Investigating Netflix Movies: https://www.datacamp.com/datalab/w/83878a08-4770-46b9-adcc-a343a523cb36/edit
+Analyzing Students' Mental Health: https://www.datacamp.com/datalab/w/96965071-a519-46eb-9a78-2d0021eaf2dc/edit
+Hypothesis Testing with Men's and Women's Soccer Matches: https://www.datacamp.com/datalab/w/a4f0da1c-b9d9-4088-b224-fa2d7cd4d45a/edit
+Customer Analytics: Preparing Data for Modeling: https://www.datacamp.com/datalab/w/17b06ddc-7d22-479f-ae89-a9144155d453/edit
+Predicting Movie Rental Durations: https://www.datacamp.com/datalab/w/da29ce56-fc9c-41fa-b3ca-577275e83023/edit
+Producing Soccer Insights for a Sports Media Agency: https://www.datacamp.com/datalab/w/a7599e44-9c20-4f4c-971c-aa2b22dc495b/edit
+Analyzing Crime in Los Angeles: https://www.datacamp.com/datalab/w/42617d8d-1ab6-4840-ab71-e68d2796feb1/edit
