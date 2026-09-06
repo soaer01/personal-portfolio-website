@@ -1,0 +1,472 @@
+[
+  {
+    "title": "Intermediate Deep Learning With PyTorch",
+    "slug": "intermediate-deep-learning-with-pytorch",
+    "url": "https://www.datacamp.com/statement-of-accomplishment/course/4f498c196a5ce72cc9e0d92e6b46a986819f3b16"
+  },
+  {
+    "title": "Introduction To Docker",
+    "slug": "introduction-to-docker",
+    "url": "https://www.datacamp.com/statement-of-accomplishment/course/c9b4b93713891541238360e2fe070980073983ee"
+  },
+  {
+    "title": "Working With Llama 3",
+    "slug": "working-with-llama-3",
+    "url": "https://www.datacamp.com/statement-of-accomplishment/course/4f46c2515ee1b8718de5d64b631f6cdd5dac93d3"
+  },
+  {
+    "title": "Developing LLM Applications With Langchain",
+    "slug": "developing-llm-applications-with-langchain",
+    "url": "https://www.datacamp.com/statement-of-accomplishment/course/dcf2ec9078c1b1aba68e422beeec406ff1ea684a"
+  },
+  {
+    "title": "Introduction To LLMs In Python",
+    "slug": "introduction-to-llms-in-python",
+    "url": "https://www.datacamp.com/statement-of-accomplishment/course/2b59bf472c180664ac83db24dc31b54d076fa829"
+  },
+  {
+    "title": "Introduction To Data Privacy",
+    "slug": "introduction-to-data-privacy",
+    "url": "https://www.datacamp.com/statement-of-accomplishment/course/1397a1a9f670046b02d0b3c23e60548489719e3b"
+  },
+  {
+    "title": "Building Scalable Agentic Systems",
+    "slug": "building-scalable-agentic-systems",
+    "url": "https://www.datacamp.com/statement-of-accomplishment/course/fc0351cee0ae12d3235ce09fa3f38d24095981a6"
+  },
+  {
+    "title": "Developing Ai Systems With The OpenAI API",
+    "slug": "developing-ai-systems-with-the-openai-api",
+    "url": "https://www.datacamp.com/statement-of-accomplishment/course/a4a17c5abba231ee5d4232efb98d4229e81bb6c6"
+  },
+  {
+    "title": "LLMops Concepts",
+    "slug": "llmops-concepts",
+    "url": "https://www.datacamp.com/statement-of-accomplishment/course/f56a0b59beeb501de47ff2fddf370ad285f8e425"
+  },
+  {
+    "title": "Working With Hugging Face",
+    "slug": "working-with-hugging-face",
+    "url": "https://www.datacamp.com/statement-of-accomplishment/course/977495a6a7f4fcf3149c326597b4f3a5696cf716"
+  },
+  {
+    "title": "Introduction To Fastapi",
+    "slug": "introduction-to-fastapi",
+    "url": "https://www.datacamp.com/statement-of-accomplishment/course/8529882aef10a0992de979450ffa79c58e126e7d"
+  },
+  {
+    "title": "Introduction To Ai Agents",
+    "slug": "introduction-to-ai-agents",
+    "url": "https://www.datacamp.com/statement-of-accomplishment/course/0242f017aa73c85719a04c48ad6bd802ac651161"
+  },
+  {
+    "title": "Case Study Building Software In Python",
+    "slug": "case-study-building-software-in-python",
+    "url": "https://www.datacamp.com/statement-of-accomplishment/course/e3be26134f1bc7a1dd109e89b396cc5cdbc19ba4"
+  },
+  {
+    "title": "Intermediate Object Oriented Programming In Python",
+    "slug": "intermediate-object-oriented-programming-in-python",
+    "url": "https://www.datacamp.com/statement-of-accomplishment/course/82bc3f48245449a22b0862e82779ea623f30db64"
+  },
+  {
+    "title": "Introduction To Object Oriented Programming In Python",
+    "slug": "introduction-to-object-oriented-programming-in-python",
+    "url": "https://www.datacamp.com/statement-of-accomplishment/course/06731fcc7b6c554b78344c58e550920354660bce"
+  },
+  {
+    "title": "Regular Expressions In Python",
+    "slug": "regular-expressions-in-python",
+    "url": "https://www.datacamp.com/statement-of-accomplishment/course/bd3766e1e773f8c903b142147e8982fce8d2beb8"
+  },
+  {
+    "title": "Large Language Models LLMs Concepts",
+    "slug": "large-language-models-llms-concepts",
+    "url": "https://www.datacamp.com/statement-of-accomplishment/course/71a82bc9ad305920711e26e3433ee26e663b24e0"
+  },
+  {
+    "title": "Introduction To Embeddings With The OpenAI API",
+    "slug": "introduction-to-embeddings-with-the-openai-api",
+    "url": "https://www.datacamp.com/statement-of-accomplishment/course/18f9290514114fe498b6a52fb693ac41e388427e"
+  },
+  {
+    "title": "Prompt Engineering With The OpenAI API",
+    "slug": "prompt-engineering-with-the-openai-api",
+    "url": "https://www.datacamp.com/statement-of-accomplishment/course/03ec7df9e488da4fe7291c8a737514218e9da945"
+  },
+  {
+    "title": "MLops Concepts",
+    "slug": "mlops-concepts",
+    "url": "https://www.datacamp.com/statement-of-accomplishment/course/305445cc6860bdf2be424ad9dd4e16f0d7d6cde6"
+  },
+  {
+    "title": "Devops Concepts",
+    "slug": "devops-concepts",
+    "url": "https://www.datacamp.com/statement-of-accomplishment/course/b33a4a9c537b50ad5aa0747d375aabf7df344be2"
+  },
+  {
+    "title": "Cleaning Data With Pyspark",
+    "slug": "cleaning-data-with-pyspark",
+    "url": "https://www.datacamp.com/statement-of-accomplishment/course/8d36b9c26b82b38bed5bd9bf55b175d3a6ede55d"
+  },
+  {
+    "title": "Big Data Fundamentals With Pyspark",
+    "slug": "big-data-fundamentals-with-pyspark",
+    "url": "https://www.datacamp.com/statement-of-accomplishment/course/276f564a9c95708dbef9a6485db05c4f75d8cf06"
+  },
+  {
+    "title": "Introduction To Pyspark",
+    "slug": "introduction-to-pyspark",
+    "url": "https://www.datacamp.com/statement-of-accomplishment/course/1c0e82bdf8caf09f6ac8a5a1e48bdf8b2e2ecb19"
+  },
+  {
+    "title": "Introduction To Apache Airflow In Python",
+    "slug": "introduction-to-apache-airflow-in-python",
+    "url": "https://www.datacamp.com/statement-of-accomplishment/course/e6a3cbc012001eaacd99bd77b335f4433c776ea0"
+  },
+  {
+    "title": "ETL And Elt In Python",
+    "slug": "etl-and-elt-in-python",
+    "url": "https://www.datacamp.com/statement-of-accomplishment/course/638d219ff548c090960bd17a2ddedb12f92fdbf6"
+  },
+  {
+    "title": "Software Engineering Principles In Python",
+    "slug": "software-engineering-principles-in-python",
+    "url": "https://www.datacamp.com/statement-of-accomplishment/course/1cbcbaf82d94fee2feb7156833c1b655244ece98"
+  },
+  {
+    "title": "Streamlined Data Ingestion With Pandas",
+    "slug": "streamlined-data-ingestion-with-pandas",
+    "url": "https://www.datacamp.com/statement-of-accomplishment/course/233e7d9d6a14ba307c38b13b7bfb866461683c80"
+  },
+  {
+    "title": "Writing Efficient Python Code",
+    "slug": "writing-efficient-python-code",
+    "url": "https://www.datacamp.com/statement-of-accomplishment/course/8fd3382c1d9757eb3f8279161be13e88ec93007a"
+  },
+  {
+    "title": "Window Functions In Snowflake",
+    "slug": "window-functions-in-snowflake",
+    "url": "https://www.datacamp.com/statement-of-accomplishment/course/71f961407535619a82b32714fb0c85c3e1addfd4"
+  },
+  {
+    "title": "Data Types And Functions In Snowflake",
+    "slug": "data-types-and-functions-in-snowflake",
+    "url": "https://www.datacamp.com/statement-of-accomplishment/course/c99ee86e5e1f073bee9d10d0ea79db5986609cc9"
+  },
+  {
+    "title": "Data Manipulation In Snowflake",
+    "slug": "data-manipulation-in-snowflake",
+    "url": "https://www.datacamp.com/statement-of-accomplishment/course/28dda9381d64b02c1295edf14cfaef841afeee71"
+  },
+  {
+    "title": "Data Visualization In Databricks",
+    "slug": "data-visualization-in-databricks",
+    "url": "https://www.datacamp.com/statement-of-accomplishment/course/8cb340be77c333d9c8b6d442d2fe62d8126d7f2f"
+  },
+  {
+    "title": "Data Management In Databricks",
+    "slug": "data-management-in-databricks",
+    "url": "https://www.datacamp.com/statement-of-accomplishment/course/9c888c16c7d879e1bdeb9e3dbee8e98509fdbef0"
+  },
+  {
+    "title": "Introduction To Databricks SQL",
+    "slug": "introduction-to-databricks-sql",
+    "url": "https://www.datacamp.com/statement-of-accomplishment/course/8d319f65e18983c8e35bffa75ab9c3f98224f08d"
+  },
+  {
+    "title": "Introduction To Databricks",
+    "slug": "introduction-to-databricks",
+    "url": "https://www.datacamp.com/statement-of-accomplishment/course/a11c20fc684f481adf9fcd7a8c7451760c8fbc0b"
+  },
+  {
+    "title": "Introduction To Data Modeling In Snowflake",
+    "slug": "introduction-to-data-modeling-in-snowflake",
+    "url": "https://www.datacamp.com/statement-of-accomplishment/course/a0a51d554b9401aec8f48161d173ffc5242f34d5"
+  },
+  {
+    "title": "Introduction To Snowflake SQL",
+    "slug": "introduction-to-snowflake-sql",
+    "url": "https://www.datacamp.com/statement-of-accomplishment/course/944a7c4f460d428c3773b6478aa9cfaef166a602"
+  },
+  {
+    "title": "Introduction To Snowflake",
+    "slug": "introduction-to-snowflake",
+    "url": "https://www.datacamp.com/statement-of-accomplishment/course/8c83308a63a64f980c227dabf348f4fe2ba25d30"
+  },
+  {
+    "title": "Data Visualization In Power Bi",
+    "slug": "data-visualization-in-power-bi",
+    "url": "https://www.datacamp.com/statement-of-accomplishment/course/cacab0810165bc2e9b3112f3692a008b332eb3f8"
+  },
+  {
+    "title": "Introduction To Dax In Power Bi",
+    "slug": "introduction-to-dax-in-power-bi",
+    "url": "https://www.datacamp.com/statement-of-accomplishment/course/20744b9fbbd2bbd6a79fc24973c4ed503b0bc176"
+  },
+  {
+    "title": "Introduction To Power Bi",
+    "slug": "introduction-to-power-bi",
+    "url": "https://www.datacamp.com/statement-of-accomplishment/course/40ba7892ddf0864d8dcedd3a55a3ec8afdcedd99"
+  },
+  {
+    "title": "Functions For Manipulating Data In Postgresql",
+    "slug": "functions-for-manipulating-data-in-postgresql",
+    "url": "https://www.datacamp.com/statement-of-accomplishment/course/aba55ad3d6593c2c9322cfaaaf8ee8627dbd2dfd"
+  },
+  {
+    "title": "Introduction To Deep Learning With PyTorch",
+    "slug": "introduction-to-deep-learning-with-pytorch",
+    "url": "https://www.datacamp.com/statement-of-accomplishment/course/7397fce8e022937dccaebee236a60845da838a8b"
+  },
+  {
+    "title": "Working With The OpenAI API",
+    "slug": "working-with-the-openai-api",
+    "url": "https://www.datacamp.com/statement-of-accomplishment/course/4662c5538b1074154188a372656eb466a203f52e"
+  },
+  {
+    "title": "Feature Engineering For Machine Learning In Python",
+    "slug": "feature-engineering-for-machine-learning-in-python",
+    "url": "https://www.datacamp.com/statement-of-accomplishment/course/d426af54010f1ae85378a67190282e8b5f8c3697"
+  },
+  {
+    "title": "Postgresql Summary Stats And Window Functions",
+    "slug": "postgresql-summary-stats-and-window-functions",
+    "url": "https://www.datacamp.com/statement-of-accomplishment/course/1808c8f4eff3b30ad7614fd200634bcd56c7a978"
+  },
+  {
+    "title": "Data Manipulation In SQL",
+    "slug": "data-manipulation-in-sql",
+    "url": "https://www.datacamp.com/statement-of-accomplishment/course/64e56d4a275568c9c837d48e07f5cd544abd6334"
+  },
+  {
+    "title": "Web Scraping With Python",
+    "slug": "web-scraping-with-python",
+    "url": "https://www.datacamp.com/statement-of-accomplishment/course/e0076014eab82b293b3556a1f26603f37d3496ec"
+  },
+  {
+    "title": "Database Design",
+    "slug": "database-design",
+    "url": "https://www.datacamp.com/statement-of-accomplishment/course/3a04fdfc0cc1a28c8444ee23773ff70e689f071d"
+  },
+  {
+    "title": "Developing Python Packages",
+    "slug": "developing-python-packages",
+    "url": "https://www.datacamp.com/statement-of-accomplishment/course/de7ee9b9c14ffdbf9d88706d17670fec0c3c71f5"
+  },
+  {
+    "title": "Data Warehousing Concepts",
+    "slug": "data-warehousing-concepts",
+    "url": "https://www.datacamp.com/statement-of-accomplishment/course/384bcd91b201606c27f5212da23a7163c68cca9d"
+  },
+  {
+    "title": "Preprocessing For Machine Learning In Python",
+    "slug": "preprocessing-for-machine-learning-in-python",
+    "url": "https://www.datacamp.com/statement-of-accomplishment/course/0f86990f41785e9055708dce7d19baf89c4fd310"
+  },
+  {
+    "title": "Intermediate Importing Data In Python",
+    "slug": "intermediate-importing-data-in-python",
+    "url": "https://www.datacamp.com/statement-of-accomplishment/course/caa8ec1974db8308c0b3702503d3fa4aa3ce5859"
+  },
+  {
+    "title": "Introduction To APIs In Python",
+    "slug": "introduction-to-apis-in-python",
+    "url": "https://www.datacamp.com/statement-of-accomplishment/course/a7320d3ce4611a14120a135916bb117623236a81"
+  },
+  {
+    "title": "Intermediate Python For Developers",
+    "slug": "intermediate-python-for-developers",
+    "url": "https://www.datacamp.com/statement-of-accomplishment/course/9afea524d0188de0c3e897d4a9d2e8ca36537e30"
+  },
+  {
+    "title": "Introduction To Shell",
+    "slug": "introduction-to-shell",
+    "url": "https://www.datacamp.com/statement-of-accomplishment/course/413a72b0513b26ec23acac5049bc0b4b4be93afe"
+  },
+  {
+    "title": "Containerization And Virtualization Concepts",
+    "slug": "containerization-and-virtualization-concepts",
+    "url": "https://www.datacamp.com/statement-of-accomplishment/course/16ddbf620e37172a2cc04317d893da4477ad63a3"
+  },
+  {
+    "title": "Machine Learning With Tree Based Models In Python",
+    "slug": "machine-learning-with-tree-based-models-in-python",
+    "url": "https://www.datacamp.com/statement-of-accomplishment/course/04632c3b2e3510911954aa99ba3db5a49856e74b"
+  },
+  {
+    "title": "Unsupervised Learning In Python",
+    "slug": "unsupervised-learning-in-python",
+    "url": "https://www.datacamp.com/statement-of-accomplishment/course/0bd7caa9149c9735dd5f2cf0e1256eae11d13097"
+  },
+  {
+    "title": "Machine Learning For Business",
+    "slug": "machine-learning-for-business",
+    "url": "https://www.datacamp.com/statement-of-accomplishment/course/98dd823daaa27e072b71bde1a07259168853dccd"
+  },
+  {
+    "title": "Supervised Learning With Scikit Learn",
+    "slug": "supervised-learning-with-scikit-learn",
+    "url": "https://www.datacamp.com/statement-of-accomplishment/course/f8e8de52ab222936a56c1ac99c3710c60f2f7a03"
+  },
+  {
+    "title": "Understanding Cloud Computing",
+    "slug": "understanding-cloud-computing",
+    "url": "https://www.datacamp.com/statement-of-accomplishment/course/f77f36ba52baab7f331374e4e68446b2a00bb6c6"
+  },
+  {
+    "title": "Experimental Design In Python",
+    "slug": "experimental-design-in-python",
+    "url": "https://www.datacamp.com/statement-of-accomplishment/course/98a38271707d0d1e6f44c6e4dfcc2fe334753130"
+  },
+  {
+    "title": "Hypothesis Testing In Python",
+    "slug": "hypothesis-testing-in-python",
+    "url": "https://www.datacamp.com/statement-of-accomplishment/course/1b8b23324e3bc46c19591306696d7fdcf76010a4"
+  },
+  {
+    "title": "Sampling In Python",
+    "slug": "sampling-in-python",
+    "url": "https://www.datacamp.com/statement-of-accomplishment/course/421c473746f4bc8e5baa69fe0e04aa8e06461734"
+  },
+  {
+    "title": "Introduction To Regression With Statsmodels In Python",
+    "slug": "introduction-to-regression-with-statsmodels-in-python",
+    "url": "https://www.datacamp.com/statement-of-accomplishment/course/5fa724c363251b530a8b496eb624c41c8800637c"
+  },
+  {
+    "title": "Writing Functions In Python",
+    "slug": "writing-functions-in-python",
+    "url": "https://www.datacamp.com/statement-of-accomplishment/course/f40447b4cf8d2a4836136c8ed33052da63dcdb9e"
+  },
+  {
+    "title": "Working With Dates And Times In Python",
+    "slug": "working-with-dates-and-times-in-python",
+    "url": "https://www.datacamp.com/statement-of-accomplishment/course/b79c94c5e4ca0c612f98c6f2b3dcd017f1861080"
+  },
+  {
+    "title": "Data Communication Concepts",
+    "slug": "data-communication-concepts",
+    "url": "https://www.datacamp.com/statement-of-accomplishment/course/a6fa020807f9b10e8f92931e2908e6698d07a77f"
+  },
+  {
+    "title": "Cleaning Data In Python",
+    "slug": "cleaning-data-in-python",
+    "url": "https://www.datacamp.com/statement-of-accomplishment/course/50771030cf9195cca663a3709e0ff64c26d60c3c"
+  },
+  {
+    "title": "Introduction To Importing Data In Python",
+    "slug": "introduction-to-importing-data-in-python",
+    "url": "https://www.datacamp.com/statement-of-accomplishment/course/43655090adb66c7a3ef063ea67f502e979046a5d"
+  },
+  {
+    "title": "Working With Categorical Data In Python",
+    "slug": "working-with-categorical-data-in-python",
+    "url": "https://www.datacamp.com/statement-of-accomplishment/course/87745267a1b288292cd1521ee16cdb86ed84a446"
+  },
+  {
+    "title": "Understanding Data Engineering",
+    "slug": "understanding-data-engineering",
+    "url": "https://www.datacamp.com/statement-of-accomplishment/course/924988fab5cdff6eae78095419922e7ac71b972f"
+  },
+  {
+    "title": "Understanding Machine Learning",
+    "slug": "understanding-machine-learning",
+    "url": "https://www.datacamp.com/statement-of-accomplishment/course/f5464212126d5bf752dc4821adfa64b7914a881b"
+  },
+  {
+    "title": "Exploratory Data Analysis In Python",
+    "slug": "exploratory-data-analysis-in-python",
+    "url": "https://www.datacamp.com/statement-of-accomplishment/course/d44572b55e14bdea8b86eb352237ca34714cb904"
+  },
+  {
+    "title": "Understanding Data Science",
+    "slug": "understanding-data-science",
+    "url": "https://www.datacamp.com/statement-of-accomplishment/course/e459faf1ea1c877fc0e6b43d2e5873b4ced69922"
+  },
+  {
+    "title": "Introduction To Github Concepts",
+    "slug": "introduction-to-github-concepts",
+    "url": "https://www.datacamp.com/statement-of-accomplishment/course/dd66ecff94cf51b387410aa72a866e7aab310c14"
+  },
+  {
+    "title": "Intermediate Git",
+    "slug": "intermediate-git",
+    "url": "https://www.datacamp.com/statement-of-accomplishment/course/79126244365901aedb10a213078eea03d278248f"
+  },
+  {
+    "title": "Introduction To Git",
+    "slug": "introduction-to-git",
+    "url": "https://www.datacamp.com/statement-of-accomplishment/course/a2b6fdc586c7a0a1b2acc8fcf0c24773c9f2ba50"
+  },
+  {
+    "title": "Joining Data In SQL",
+    "slug": "joining-data-in-sql",
+    "url": "https://www.datacamp.com/statement-of-accomplishment/course/903fa8b9a7d0c0e1736b6c7892a2ec5f57e398d8"
+  },
+  {
+    "title": "Introduction To Relational Databases In SQL",
+    "slug": "introduction-to-relational-databases-in-sql",
+    "url": "https://www.datacamp.com/statement-of-accomplishment/course/bcbe10bc915a5dcc693a19199643ca495fd8eb56"
+  },
+  {
+    "title": "Intermediate SQL Server",
+    "slug": "intermediate-sql-server",
+    "url": "https://www.datacamp.com/statement-of-accomplishment/course/80be251a21cbff1771ab105280dc348e8c2ace12"
+  },
+  {
+    "title": "Introduction To SQL Server",
+    "slug": "introduction-to-sql-server",
+    "url": "https://www.datacamp.com/statement-of-accomplishment/course/762570fb10ed8ca4c68c899ab6cf23372df63af1"
+  },
+  {
+    "title": "Introduction To SQL",
+    "slug": "introduction-to-sql",
+    "url": "https://www.datacamp.com/statement-of-accomplishment/course/c2438bde857b5e5cd86262d81c172b21a442cda3"
+  },
+  {
+    "title": "Python Toolbox",
+    "slug": "python-toolbox",
+    "url": "https://www.datacamp.com/statement-of-accomplishment/course/7ceb3b37111224b0af4e0186dd3ba680d2a8b615"
+  },
+  {
+    "title": "Introduction To Functions In Python",
+    "slug": "introduction-to-functions-in-python",
+    "url": "https://www.datacamp.com/statement-of-accomplishment/course/26b6c9f9e90c40190eaf568ecc2cca988cd706b3"
+  },
+  {
+    "title": "Introduction To Data Visualization With Seaborn",
+    "slug": "introduction-to-data-visualization-with-seaborn",
+    "url": "https://www.datacamp.com/statement-of-accomplishment/course/ff8002408cd258a68db3515b9b62df854453a15d"
+  },
+  {
+    "title": "Introduction To Data Visualization With Matplotlib",
+    "slug": "introduction-to-data-visualization-with-matplotlib",
+    "url": "https://www.datacamp.com/statement-of-accomplishment/course/8cbe113cc85e928f6e54609e19335864c5eac3ca"
+  },
+  {
+    "title": "Introduction To Statistics In Python",
+    "slug": "introduction-to-statistics-in-python",
+    "url": "https://www.datacamp.com/statement-of-accomplishment/course/c1c8f10b0f8cd2bfe5fbf3fcb3ea3a7ce3f85701"
+  },
+  {
+    "title": "Joining Data With Pandas",
+    "slug": "joining-data-with-pandas",
+    "url": "https://www.datacamp.com/statement-of-accomplishment/course/72bf49256f9259d4056a4c8ef82e6d8eb66e0703"
+  },
+  {
+    "title": "Data Manipulation With Pandas",
+    "slug": "data-manipulation-with-pandas",
+    "url": "https://www.datacamp.com/statement-of-accomplishment/course/6eb85724500a843809a895944469662d596c546e"
+  },
+  {
+    "title": "Intermediate Python",
+    "slug": "intermediate-python",
+    "url": "https://www.datacamp.com/statement-of-accomplishment/course/a16634d4bfb0150c5414d2cc65f1a4fad1c76ef7"
+  },
+  {
+    "title": "Intro To Python For Data Science",
+    "slug": "intro-to-python-for-data-science",
+    "url": "https://www.datacamp.com/statement-of-accomplishment/course/b981bf1925dedc46b7e0a32ba97ac3aca0dcd59a"
+  }
+]

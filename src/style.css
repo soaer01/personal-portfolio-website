@@ -588,3 +588,38 @@ body {
   box-shadow: 0 12px 30px rgba(0, 0, 0, 0.4), 0 0 20px rgba(129, 140, 248, 0.1);
 }
 
+.course-card {
+  background-color: var(--color-surface-800);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  border-radius: 0.85rem;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: all 0.25s ease;
+}
+
+.course-card:hover {
+  border-color: var(--color-accent-400);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
+}
+
+.course-search-input {
+  width: 100%;
+  padding: 0.85rem 1.25rem;
+  border-radius: 0.75rem;
+  background-color: var(--color-surface-800);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  color: white;
+  font-size: 0.95rem;
+  outline: none;
+  transition: all 0.3s;
+}
+
+.course-search-input:focus {
+  border-color: var(--color-accent-400);
+  box-shadow: 0 0 0 3px rgba(129, 140, 248, 0.2);
+}
+
+

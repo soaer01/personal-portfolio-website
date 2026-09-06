@@ -6,6 +6,7 @@ import recipeImg from './assets/projects/recipe.png'
 import walmartImg from './assets/projects/walmart.jpg'
 import nlpImg from './assets/projects/nlp.png'
 import obstacleImg from './assets/projects/obstacle.png'
+import { datacampCourses } from './datacamp_courses'
 
 const profileEl = document.getElementById('profile-img') as HTMLImageElement
 if (profileEl) profileEl.src = profileImg
@@ -148,7 +149,7 @@ function renderDatalabProjects() {
       </h4>
       <p class="text-slate-500 text-xs flex items-center gap-1 mt-auto pt-2">
         <svg class="w-3.5 h-3.5 text-accent-400" fill="currentColor" viewBox="0 0 24 24"><path d="M12.946 18.151v-5.239L21.209 8.2 19.2 7.048l-6.254 3.567V5.376l-2.009-1.15v14.074l-7.28-4.144-1.989 1.15 9.268 5.282 1.1-.628-.002-.004 1.003-.572-.002-.003 8.836-5.022L19.862 13l-6.916 3.937v1.214zm-2.009-9.968L3.674 12.9l2.009 1.152 5.254-2.994v4.091l2.009 1.15V2.226L5.685 6.937l2.009 1.153 3.243-1.849v1.942z"/></svg>
-        DataCamp Datalab Interactive Workspace
+        DataCamp DataLab Interactive Workspace
       </p>
     `
     grid.appendChild(card)
@@ -156,8 +157,88 @@ function renderDatalabProjects() {
   observeElements()
 }
 
+let showAllCourses = false
+let currentCourseQuery = ''
+let currentCourseCategory = 'all'
+
+function renderCourses() {
+  const grid = document.getElementById('courses-grid')
+  const toggleBtn = document.getElementById('toggle-courses-btn')
+  if (!grid) return
+  grid.innerHTML = ''
+
+  let filtered = datacampCourses
+  if (currentCourseCategory !== 'all') {
+    filtered = filtered.filter(c => c.category === currentCourseCategory)
+  }
+  if (currentCourseQuery) {
+    const q = currentCourseQuery.toLowerCase()
+    filtered = filtered.filter(c => c.title.toLowerCase().includes(q))
+  }
+
+  const limit = (showAllCourses || currentCourseQuery) ? filtered.length : 12
+  const visibleCourses = filtered.slice(0, limit)
+
+  visibleCourses.forEach((c) => {
+    const card = document.createElement('div')
+    card.className = 'course-card reveal-up animate-in'
+    const catLabel = c.category === 'ai' ? 'AI & LLMs' : c.category === 'data-eng' ? 'Data Eng' : c.category === 'ml' ? 'Machine Learning' : 'Data Analysis'
+    card.innerHTML = `
+      <div class="flex items-start justify-between gap-2 mb-2">
+        <span class="skill-tag text-xs">${catLabel}</span>
+        <span class="text-emerald-400 text-xs flex items-center gap-1 font-medium">
+          <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M5 13l4 4L19 7"/></svg>Completed
+        </span>
+      </div>
+      <h4 class="text-white font-medium text-sm mb-3 leading-snug hover:text-accent-400 transition-colors">
+        <a href="${c.url}" target="_blank" rel="noopener">${c.title}</a>
+      </h4>
+      <a href="${c.url}" target="_blank" rel="noopener" class="text-accent-400 hover:text-white transition-colors text-xs font-medium inline-flex items-center gap-1.5 mt-auto pt-2 border-t border-white/5">
+        <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z"/></svg>
+        Statement of Accomplishment
+      </a>
+    `
+    grid.appendChild(card)
+  })
+
+  if (toggleBtn) {
+    if (filtered.length <= 12 || currentCourseQuery) {
+      toggleBtn.style.display = 'none'
+    } else {
+      toggleBtn.style.display = 'inline-flex'
+      toggleBtn.textContent = showAllCourses ? 'Collapse Course List' : `Show All ${datacampCourses.length} Courses`
+    }
+  }
+  observeElements()
+}
+
+function setupCourseControls() {
+  const searchInput = document.getElementById('course-search') as HTMLInputElement
+  const toggleBtn = document.getElementById('toggle-courses-btn')
+  const catButtons = document.querySelectorAll<HTMLButtonElement>('.course-cat-btn')
+
+  searchInput?.addEventListener('input', (e) => {
+    currentCourseQuery = (e.target as HTMLInputElement).value
+    renderCourses()
+  })
+
+  toggleBtn?.addEventListener('click', () => {
+    showAllCourses = !showAllCourses
+    renderCourses()
+  })
+
+  catButtons.forEach(btn => {
+    btn.addEventListener('click', () => {
+      catButtons.forEach(b => b.classList.remove('active'))
+      btn.classList.add('active')
+      currentCourseCategory = btn.dataset.courseCat || 'all'
+      renderCourses()
+    })
+  })
+}
+
 function setupFilters() {
-  const buttons = document.querySelectorAll<HTMLButtonElement>('.filter-btn')
+  const buttons = document.querySelectorAll<HTMLButtonElement>('.filter-btn:not(.course-cat-btn)')
   buttons.forEach(btn => {
     btn.addEventListener('click', () => {
       buttons.forEach(b => b.classList.remove('active'))
@@ -295,6 +376,8 @@ function setupContactForm() {
 
 renderProjects('all')
 renderDatalabProjects()
+renderCourses()
+setupCourseControls()
 setupFilters()
 setupNavScroll()
 setupMobileNav()
