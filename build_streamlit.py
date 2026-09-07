@@ -38,7 +38,7 @@ def bundle_site(dist_dir='dist', output_file='portfolio_bundle.html'):
             if os.path.isfile(fpath):
                 asset_files[fname] = fpath
 
-    # Process CSS files referenced in HTML
+    # Inline CSS files referenced in HTML
     def replace_css_link(match):
         css_filename = match.group(1).split('/')[-1]
         if css_filename in asset_files:
@@ -49,7 +49,7 @@ def bundle_site(dist_dir='dist', output_file='portfolio_bundle.html'):
 
     html = re.sub(r'<link[^>]+href=["\']([^"\']+\.css)["\'][^>]*>', replace_css_link, html)
 
-    # Process JS files referenced in HTML
+    # Inline JS files referenced in HTML
     def replace_js_script(match):
         js_filename = match.group(1).split('/')[-1]
         if js_filename in asset_files:
@@ -60,33 +60,11 @@ def bundle_site(dist_dir='dist', output_file='portfolio_bundle.html'):
 
     html = re.sub(r'<script[^>]+src=["\']([^"\']+\.js)["\'][^>]*>\s*</script>', replace_js_script, html)
 
-    # Inline image assets in JS and HTML (e.g. /assets/profile-DSLJrSBk.jpg)
-    for fname, fpath in asset_files.items():
-        if fname.lower().endswith(('.png', '.jpg', '.jpeg', '.svg')):
-            b64_uri = file_to_base64_data_uri(fpath)
-            # Match quotes or backticks followed by optional dot/slash/assets/filename and closing quote/backtick
-            pattern = re.compile(r'[`"\'](?:[^\`\'"\n]*/)?' + re.escape(fname) + r'[`"\']')
-            new_html, count = pattern.subn(f'`{b64_uri}`', html)
-            print(f"Replaced {count} instances of {fname}")
-            html = new_html
-
-    # Inline favicon.svg if present
+    # Inline favicon SVG if present
     fav_path = os.path.join(dist_dir, 'favicon.svg')
     if os.path.exists(fav_path):
         fav_b64 = file_to_base64_data_uri(fav_path)
         html = re.sub(r'href=["\'](?:/|\./)?favicon\.svg["\']', f'href="{fav_b64}"', html)
-
-    # Inline CV/Resume PDF if present in public or src/assets
-    cv_paths = [
-        os.path.join('src', 'assets', 'Mian_Afzal_Saeed_CV.pdf'),
-        os.path.join('public', 'Mian_Afzal_Saeed_CV.pdf')
-    ]
-    for cv_p in cv_paths:
-        if os.path.exists(cv_p):
-            cv_b64 = file_to_base64_data_uri(cv_p)
-            html = re.sub(r'href=["\'][^"\']*Mian_Afzal_Saeed_CV\.pdf["\']', f'href="{cv_b64}" download="Mian_Afzal_Saeed_CV.pdf"', html)
-            print(f"Inlined CV PDF from {cv_p}")
-            break
 
     # Write output file
     with open(output_file, 'w', encoding='utf-8') as f:

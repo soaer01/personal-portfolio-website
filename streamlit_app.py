@@ -1,4 +1,5 @@
 import os
+import subprocess
 import streamlit as st
 import streamlit.components.v1 as components
 
@@ -10,7 +11,7 @@ st.set_page_config(
     initial_sidebar_state="collapsed"
 )
 
-# Custom CSS to eliminate Streamlit margins/paddings and scrollbars on container
+# Custom CSS to eliminate Streamlit padding/margins and set full frame height
 st.markdown("""
     <style>
         #MainMenu {visibility: hidden;}
@@ -28,29 +29,33 @@ st.markdown("""
             gap: 0rem !important;
         }
         iframe {
-            display: block;
-            border: none;
+            display: block !important;
+            border: none !important;
             width: 100% !important;
         }
     </style>
 """, unsafe_allow_html=True)
 
-# Path to pre-built bundled HTML
-BUNDLE_PATH = os.path.join(os.path.dirname(__file__), "portfolio_bundle.html")
+BUNDLE_FILE = os.path.join(os.path.dirname(__file__), "portfolio_bundle.html")
+DIST_DIR = os.path.join(os.path.dirname(__file__), "dist")
 
-# Auto-build bundle if missing
-if not os.path.exists(BUNDLE_PATH):
+# Generate bundle if missing
+if not os.path.exists(BUNDLE_FILE):
     try:
+        if not os.path.exists(DIST_DIR):
+            subprocess.run(["npm", "run", "build"], check=False)
         from build_streamlit import bundle_site
         bundle_site()
     except Exception as e:
-        st.error(f"Error building portfolio bundle: {e}")
+        st.error(f"Error bundling site: {e}")
 
-if os.path.exists(BUNDLE_PATH):
-    with open(BUNDLE_PATH, "r", encoding="utf-8") as f:
+# Render component using declare_component or html fallback
+if os.path.exists(BUNDLE_FILE):
+    with open(BUNDLE_FILE, "r", encoding="utf-8") as f:
         html_code = f.read()
-    
-    # Render component with full interactive capabilities
-    components.html(html_code, height=2200, scrolling=True)
+    components.html(html_code, height=2600, scrolling=True)
+elif os.path.exists(DIST_DIR):
+    portfolio_comp = components.declare_component("portfolio_app", path=DIST_DIR)
+    portfolio_comp(key="portfolio_view")
 else:
-    st.error("Portfolio HTML bundle could not be found.")
+    st.error("Portfolio files not found.")
