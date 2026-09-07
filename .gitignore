@@ -12,6 +12,9 @@ node_modules
 dist-ssr
 *.local
 
+# Local Archive (keeps extra files on local machine without pushing to GitHub/Streamlit)
+archive/
+
 # Editor directories and files
 .vscode/*
 !.vscode/extensions.json
