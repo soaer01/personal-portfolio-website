@@ -318,41 +318,27 @@ function setupSmoothScroll() {
 }
 
 function observeElements() {
-  const observer = new IntersectionObserver((entries) => {
-    entries.forEach(entry => {
-      if (entry.isIntersecting) {
-        entry.target.classList.add('visible')
-      }
-    })
-  }, { threshold: 0.1, rootMargin: '0px 0px -50px 0px' })
+  const elements = document.querySelectorAll('.reveal-up')
+  elements.forEach(el => el.classList.add('visible'))
 
-  document.querySelectorAll('.reveal-up').forEach(el => observer.observe(el))
+  if ('IntersectionObserver' in window) {
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible')
+        }
+      })
+    }, { threshold: 0.01 })
+    elements.forEach(el => observer.observe(el))
+  }
 }
 
 function animateCounters() {
   const counters = document.querySelectorAll<HTMLElement>('.stat-number[data-target]')
-  const observer = new IntersectionObserver((entries) => {
-    entries.forEach(entry => {
-      if (entry.isIntersecting) {
-        const el = entry.target as HTMLElement
-        const target = parseInt(el.dataset.target || '0')
-        let current = 0
-        const increment = target / 40
-        const timer = setInterval(() => {
-          current += increment
-          if (current >= target) {
-            el.textContent = target.toString()
-            clearInterval(timer)
-          } else {
-            el.textContent = Math.floor(current).toString()
-          }
-        }, 30)
-        observer.unobserve(el)
-      }
-    })
-  }, { threshold: 0.5 })
-
-  counters.forEach(counter => observer.observe(counter))
+  counters.forEach(el => {
+    const target = parseInt(el.dataset.target || '0')
+    el.textContent = target.toString()
+  })
 }
 
 function typeWriter() {
