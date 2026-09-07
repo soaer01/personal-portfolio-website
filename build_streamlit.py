@@ -60,6 +60,15 @@ def bundle_site(dist_dir='dist', output_file='portfolio_bundle.html'):
 
     html = re.sub(r'<script[^>]+src=["\']([^"\']+\.js)["\'][^>]*>\s*</script>', replace_js_script, html)
 
+    # Inline all images as base64 Data URIs (profile, medgraph, airline, recipe, walmart, nlp, obstacle)
+    for fname, fpath in asset_files.items():
+        if fname.lower().endswith(('.png', '.jpg', '.jpeg', '.svg')):
+            b64_uri = file_to_base64_data_uri(fpath)
+            pattern = re.compile(r'[`"\'](?:[^\`\'"\n]*/)?' + re.escape(fname) + r'[`"\']')
+            new_html, count = pattern.subn(f'`{b64_uri}`', html)
+            print(f"Inlined {count} instances of image {fname}")
+            html = new_html
+
     # Inline favicon SVG if present
     fav_path = os.path.join(dist_dir, 'favicon.svg')
     if os.path.exists(fav_path):

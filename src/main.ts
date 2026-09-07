@@ -1,11 +1,11 @@
 import './style.css'
 import profileImg from './assets/profile.jpg'
-import medgraphImg from './assets/projects/medgraph.png'
-import airlineImg from './assets/projects/airline.png'
+import medgraphImg from './assets/projects/medgraph.jpg'
+import airlineImg from './assets/projects/airline.jpg'
 import recipeImg from './assets/projects/recipe.png'
 import walmartImg from './assets/projects/walmart.jpg'
-import nlpImg from './assets/projects/nlp.png'
-import obstacleImg from './assets/projects/obstacle.png'
+import nlpImg from './assets/projects/nlp.jpg'
+import obstacleImg from './assets/projects/obstacle.jpg'
 import { datacampCourses } from './datacamp_courses'
 
 const profileEl = document.getElementById('profile-img') as HTMLImageElement
