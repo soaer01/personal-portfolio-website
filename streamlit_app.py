@@ -1,5 +1,6 @@
 import os
 import subprocess
+from pathlib import Path
 import streamlit as st
 import streamlit.components.v1 as components
 
@@ -49,13 +50,12 @@ if not os.path.exists(BUNDLE_FILE):
     except Exception as e:
         st.error(f"Error bundling site: {e}")
 
-# Render component using declare_component or html fallback
+# Render component using st.iframe
 if os.path.exists(BUNDLE_FILE):
-    with open(BUNDLE_FILE, "r", encoding="utf-8") as f:
-        html_code = f.read()
-    components.html(html_code, height=2600, scrolling=True)
+    st.iframe(Path(BUNDLE_FILE), height=2800)
 elif os.path.exists(DIST_DIR):
     portfolio_comp = components.declare_component("portfolio_app", path=DIST_DIR)
     portfolio_comp(key="portfolio_view")
 else:
     st.error("Portfolio files not found.")
+
