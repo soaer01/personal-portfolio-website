@@ -14,6 +14,8 @@ dist-ssr
 
 # Local Archive (keeps extra files on local machine without pushing to GitHub/Streamlit)
 archive/
+update_index_html.py
+
 
 # Editor directories and files
 .vscode/*

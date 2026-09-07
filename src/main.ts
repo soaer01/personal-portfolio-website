@@ -98,11 +98,23 @@ const datalabProjects = [
 function renderProjects(filter: string) {
   const grid = document.getElementById('projects-grid')
   if (!grid) return
+  const cards = grid.querySelectorAll<HTMLElement>('.project-card')
+  if (cards.length === 6) {
+    cards.forEach(card => {
+      const cat = card.getAttribute('data-category')
+      if (filter === 'all' || cat === filter) {
+        card.style.display = 'block'
+      } else {
+        card.style.display = 'none'
+      }
+    })
+    return
+  }
   grid.innerHTML = ''
   const filtered = filter === 'all' ? projects : projects.filter(p => p.category === filter)
   filtered.forEach((p, i) => {
     const card = document.createElement('div')
-    card.className = 'project-card reveal-up animate-in'
+    card.className = 'project-card reveal-up visible animate-in'
     card.style.animationDelay = `${i * 100}ms`
     card.setAttribute('data-category', p.category)
     const linksHtml = [
@@ -135,11 +147,25 @@ function renderDatalabProjects() {
   const grid = document.getElementById('datalab-grid')
   const toggleBtn = document.getElementById('toggle-datalab-btn')
   if (!grid) return
+  const cards = grid.querySelectorAll<HTMLElement>('.datalab-card')
+  if (cards.length === 18) {
+    cards.forEach((card, i) => {
+      if (showAllDatalab || i < 6) {
+        card.style.display = 'flex'
+      } else {
+        card.style.display = 'none'
+      }
+    })
+    if (toggleBtn) {
+      toggleBtn.textContent = showAllDatalab ? 'Collapse DataLab Projects' : 'Show All DataLab Projects'
+    }
+    return
+  }
   grid.innerHTML = ''
   const items = showAllDatalab ? datalabProjects : datalabProjects.slice(0, 6)
   items.forEach((p, i) => {
     const card = document.createElement('div')
-    card.className = 'datalab-card reveal-up animate-in'
+    card.className = 'datalab-card reveal-up visible animate-in'
     card.style.animationDelay = `${(i % 6) * 80}ms`
     card.innerHTML = `
       <div class="flex items-start justify-between mb-3">
@@ -181,6 +207,41 @@ function renderCourses() {
   const grid = document.getElementById('courses-grid')
   const toggleBtn = document.getElementById('toggle-courses-btn')
   if (!grid) return
+  const cards = grid.querySelectorAll<HTMLElement>('.course-card')
+
+  if (cards.length === 94) {
+    let visibleCount = 0
+    let totalMatching = 0
+    cards.forEach(card => {
+      const cat = card.getAttribute('data-category')
+      const title = card.getAttribute('data-title') || ''
+      const catMatch = currentCourseCategory === 'all' || cat === currentCourseCategory
+      const queryMatch = !currentCourseQuery || title.includes(currentCourseQuery.toLowerCase())
+
+      if (catMatch && queryMatch) {
+        totalMatching++
+        if (showAllCourses || currentCourseQuery || visibleCount < 12) {
+          card.style.display = 'flex'
+        } else {
+          card.style.display = 'none'
+        }
+        visibleCount++
+      } else {
+        card.style.display = 'none'
+      }
+    })
+
+    if (toggleBtn) {
+      if (totalMatching <= 12 || currentCourseQuery) {
+        toggleBtn.style.display = 'none'
+      } else {
+        toggleBtn.style.display = 'inline-flex'
+        toggleBtn.textContent = showAllCourses ? 'Collapse Course List' : 'Show All Courses'
+      }
+    }
+    return
+  }
+
   grid.innerHTML = ''
 
   let filtered = datacampCourses
@@ -197,7 +258,7 @@ function renderCourses() {
 
   visibleCourses.forEach((c) => {
     const card = document.createElement('div')
-    card.className = 'course-card reveal-up animate-in'
+    card.className = 'course-card reveal-up visible animate-in'
     const catLabel = c.category === 'ai' ? 'AI & LLMs' : c.category === 'data-eng' ? 'Data Eng' : c.category === 'ml' ? 'Machine Learning' : 'Data Analysis'
     card.innerHTML = `
       <div class="flex items-start justify-between gap-2 mb-2">
